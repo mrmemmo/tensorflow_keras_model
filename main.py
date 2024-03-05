@@ -18,7 +18,7 @@ def main():
 
     # Right after getting the tokenizer, save it to a file
     # Specify your tokenizer save path
-    tokenizer_save_path = '/Users/mmemmo/Desktop/Coding/MyPythonCode/AI2024/NeuralNets/files/tokenizer.pickle'
+    tokenizer_save_path = 'path_to_file/tokenizer.pickle'
     with open(tokenizer_save_path, 'wb') as handle:
         pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
@@ -30,7 +30,7 @@ def main():
 
     model = build_model(vocab_size, sequence_length)
     # Specify your model save path
-    model_save_path = '/Users/mmemmo/Desktop/Coding/MyPythonCode/AI2024/NeuralNets/files/sentiment_analysis_model'
+    model_save_path = 'path_to_file/sentiment_analysis_model'
     model, history = train_model(
         model, X_train, y_train, X_test, y_test, model_save_path)
 
