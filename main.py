@@ -1,5 +1,5 @@
-from z_data_preprocessing import preprocess_tweets, read_tweets_and_labels, read_sequences_and_labels, read_sequences, encode_sequences, pad_sequences_p, read_labels, split_data
-from z_model_training import build_model, train_model
+from data_preprocessing import preprocess_tweets, read_tweets_and_labels, read_sequences_and_labels, read_sequences, encode_sequences, pad_sequences_p, read_labels, split_data
+from model_training import build_model, train_model
 import numpy as np
 import pickle
 
